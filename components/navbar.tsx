@@ -38,8 +38,7 @@ export const Navbar = () => {
   return (
     <NextUINavbar
       maxWidth="xl"
-      position="sticky"
-      className="bg-black backdrop-filter-none "
+      className=" backdrop-filter-none py-14 absolute bg-inherit"
     >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand>
@@ -55,7 +54,7 @@ export const Navbar = () => {
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link className="text-white" color="foreground" href="#">
+            <Link className="text-white" color="foreground" href="/about">
               About Us
             </Link>
           </NavbarItem>
