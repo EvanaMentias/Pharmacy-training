@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+
 import Branches from "./branches";
 const Landing = () => {
   return (
@@ -30,11 +31,11 @@ const Landing = () => {
         </div>
         <div className="w-1/2 mt-20">
           <Image
-            src="/pharmacy.svg"
             alt="Logo"
-            width={730}
-            height={520}
             className="rounded-3xl -ml-24"
+            height={520}
+            src="/pharmacy.svg"
+            width={730}
           />
         </div>
       </div>

@@ -35,15 +35,16 @@ export const Navbar = () => {
       label: "Logout",
     },
   ];
+
   return (
     <NextUINavbar
-      maxWidth="xl"
       className=" backdrop-filter-none py-14 absolute bg-inherit"
+      maxWidth="xl"
     >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand>
           <NextLink className="flex justify-start items-center gap-10" href="/">
-            <Image src="/Logo.svg" alt="Logo" width={130} height={130} />
+            <Image alt="Logo" height={130} src="/Logo.svg" width={130} />
           </NextLink>
         </NavbarBrand>
 
@@ -59,7 +60,7 @@ export const Navbar = () => {
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link className="text-white" color="foreground" href="#">
+            <Link className="text-white" color="foreground" href="/shop">
               Services{" "}
             </Link>
           </NavbarItem>
@@ -79,16 +80,16 @@ export const Navbar = () => {
               <DropdownTrigger>
                 <div className="flex gap-1">
                   <Image
-                    src="/people.svg"
                     alt="people"
-                    width={25}
                     height={25}
+                    src="/people.svg"
+                    width={25}
                   />
                   <Image
-                    src="/Down-Arrow.svg"
                     alt="Down Arrow"
-                    width={10}
                     height={10}
+                    src="/Down-Arrow.svg"
+                    width={10}
                   />
                 </div>
               </DropdownTrigger>
@@ -96,8 +97,8 @@ export const Navbar = () => {
                 {(item) => (
                   <DropdownItem
                     key={item.key}
-                    color={item.key === "delete" ? "danger" : "default"}
                     className={item.key === "delete" ? "text-danger" : ""}
+                    color={item.key === "delete" ? "danger" : "default"}
                   >
                     {item.label}
                   </DropdownItem>
@@ -108,15 +109,15 @@ export const Navbar = () => {
 
           <NavbarItem className="hidden lg:flex">
             <Button
-              radius="full"
               className="bg-green-600 border-2 border-white text-white"
+              radius="full"
             >
               <span>Download App</span>{" "}
               <Image
-                src="/download.svg"
                 alt="download"
-                width={10}
                 height={10}
+                src="/download.svg"
+                width={10}
               />
             </Button>
           </NavbarItem>
